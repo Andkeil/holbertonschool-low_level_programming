@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ *main - Starting point
+ *
+ *Purpose: Prints byte size of data types
+ *
+ *Return always 0
+ */
+
 int main()
 {
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
@@ -7,5 +15,5 @@ int main()
 	printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
 	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
 	printf("Size of a float: %lu byte(s)\n", sizeof(float));
-	return 0;
+	return (0);
 }

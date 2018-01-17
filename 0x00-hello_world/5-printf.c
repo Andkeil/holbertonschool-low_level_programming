@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
-*main - Starting point
-*
-*Purpose - prints "with proper gramma, but the outcome is a piece of art"
-*
-* Return: Always 0
-*/
+ *main - Starting point
+ *
+ *Purpose - prints "with proper gramma, but the outcome is a piece of art"
+ *
+ * Return: Always 0
+ */
 
 int main()
 {

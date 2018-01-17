@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- *main - Starting point
+ * main - Starting point
  *
- *Purpose: Prints byte size of data types
+ * Purpose: Prints byte size of data types
  *
- *Return always 0
+ * Return: Always 0 (success)
  */
 
-int main()
+int main(void)
 {
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
 	printf("Size of an int: %lu byte(s)\n", sizeof(int));

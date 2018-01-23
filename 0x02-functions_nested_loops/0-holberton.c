@@ -1,10 +1,10 @@
-#include <unistd.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
  * main - Entry point
  *
- * purpose - putchar 00-99 with comma
+ * purpose - putchar Holberton
  *
  * Return: (0) always
  */

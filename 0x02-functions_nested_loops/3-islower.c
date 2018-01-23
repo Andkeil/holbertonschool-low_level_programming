@@ -2,14 +2,14 @@
 
 /**
  * _islower - check the code for Holberton School students.
- * @c: number checked if it's lowercase
+ * @i: number checked if it's lowercase
  *
  * Return: 1 or 0.
  */
 
-int _islower(int c);
+int _islower(int i);
 {
-	if (c >= 97 && c <= 122)
+	if (i > 96 && i < 123)
 	{
 		return (1);
 	}

@@ -12,7 +12,7 @@ int main(void)
 {
 	long int i, j, k = 0, a = 1;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i <= 51; i++)
 	{
 		if (i <= 1)
 			j = i;
@@ -22,7 +22,7 @@ int main(void)
 			k = a;
 			a = j;
 			printf("%li", j);
-			if (i != 50)
+			if (i != 51)
 			{
 				printf(", ");
 			}

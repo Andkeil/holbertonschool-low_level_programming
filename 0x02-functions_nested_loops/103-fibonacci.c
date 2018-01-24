@@ -10,23 +10,19 @@
 
 int main(void)
 {
-	long int i, j, k = 0, a = 1, sum = 0;
+	int i;
+	unsigned long int j, k = 0, a = 1, sum = 0;
 
-	for (i = 0; i <= 51; i++)
+	for (i = 0; i < 100; i++)
 	{
-		if (i <= 1)
-			j = i;
-		else
+		j = k + a;
+		k = a;
+		a = j;
+		if (j % 2 == 0 && sum < 4000000)
 		{
-			j = k + a;
-			k = a;
-			a = j;
-			if (j % 2 == 0)
-			{
-				sum += j;
-			}
+			sum += j;
 		}
 	}
-	printf("%li\n", j);
+	printf("%li\n", sum);
 	return (0);
 }

@@ -21,8 +21,13 @@ int main(void)
 			j = k + a;
 			k = a;
 			a = j;
+			printf("%li", j);
+			if (i != 50)
+			{
+				printf(", ");
+			}
 		}
-		printf("%li\n", j);
 	}
+	printf("\n");
 	return (0);
 }

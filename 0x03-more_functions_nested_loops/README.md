@@ -1,0 +1,1 @@
+Function 0: Check for uppercase char

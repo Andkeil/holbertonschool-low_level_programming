@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - check the code for Holberton School students.
- * @i: number checked if it's digit
+ * @c: number checked if it's digit
  *
  * Return: 1 or 0.
  */

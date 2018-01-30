@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * swap - Change values using pointers
+ * swap_int - Change values using pointers
  *
  * @a: first pointer value
  * @b: second pointer value

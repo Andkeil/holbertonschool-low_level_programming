@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strncat - function to concat strings
+ * *cap_string - function to cap words in strings
  *
  * @s: string pointer
  *

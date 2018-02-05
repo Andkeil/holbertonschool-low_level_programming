@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *memset - fills the first n bytes of mem pointed to with char
+ * *_memset - fills the first n bytes of mem pointed to with char
  *
  * @s: buffer
  * @b: constant byte

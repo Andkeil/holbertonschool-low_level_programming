@@ -31,9 +31,10 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * _strlen_recursion - return length of string
+ * itpal - recursively checks if palindrome
  *
  * @s: char array string
+ * @slen: string length
  *
  * Return: void
  */

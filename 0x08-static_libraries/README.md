@@ -1,0 +1,1 @@
+The basics of creating a static library in C.

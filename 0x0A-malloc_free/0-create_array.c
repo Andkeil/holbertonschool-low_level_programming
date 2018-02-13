@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - creating an array using malloc
@@ -12,18 +13,18 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	unsigned int i = 0;
 	char *p;
 
 	if (size == 0)
 		return (NULL);
 	p = malloc(size * sizeof(char));
-	for (i = 0; i < (signed int) size; i++)
-	{
-		*(p + i) = c;
-	}
 	if (p == NULL)
 		return (NULL);
-	else
+	while (i < size)
+	{
+		*(p + i) = c;
+		i++;
+	}
 	return (p);
 }

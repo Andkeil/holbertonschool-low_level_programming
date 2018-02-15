@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * *_calloc - Allocate memory for an array
@@ -15,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i, *p;
 
-	if (nmemb == 0 || size == 0)
+	if (nmemb == 0 || size == 0 || nmemb >= UINT_MAX)
 		return (NULL);
 
 	p = malloc(nmemb * size * sizeof(int));

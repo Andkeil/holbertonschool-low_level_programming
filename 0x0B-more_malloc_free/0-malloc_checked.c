@@ -10,11 +10,11 @@
  * Return: pointer to mem allocated
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	unsigned int *p;
 
-	p = malloc(b);
+	p = (void *)malloc(b);
 	if (p == NULL || b == 0)
 	{
 		exit(98);

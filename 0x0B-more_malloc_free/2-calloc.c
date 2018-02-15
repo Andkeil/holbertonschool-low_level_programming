@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
 
 /**
  * *_calloc - Allocate memory for an array

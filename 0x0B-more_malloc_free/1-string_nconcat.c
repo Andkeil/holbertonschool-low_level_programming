@@ -15,16 +15,22 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, slen1, slen2;
-	char *constr;
+	char *constr, *blank = "";
 
 	if (s1)
 		slen1 = _strlen(s1);
 	else
+	{
 		slen1 = 0;
+		s1 = blank;
+	}
 	if (s2)
 		slen2 = _strlen(s2);
 	else
+	{
 		slen2 = 0;
+		s2 = blank;
+	}
 
 	constr = malloc((sizeof(char) * slen1) + 1 + n);
 	if (constr == NULL)

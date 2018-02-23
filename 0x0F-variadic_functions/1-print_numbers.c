@@ -3,8 +3,9 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - Sum the value of all input
+ * print_numbers - print the numbers with given separator
  *
+ * @separator: string for separating numbers
  * @n: number of parameters
  *
  * Return: void

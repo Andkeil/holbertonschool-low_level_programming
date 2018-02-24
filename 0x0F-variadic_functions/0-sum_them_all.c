@@ -7,7 +7,7 @@
  *
  * @n: number of parameters
  *
- * Return: void
+ * Return: int sum
  */
 
 int sum_them_all(const unsigned int n, ...)

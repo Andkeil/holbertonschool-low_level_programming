@@ -97,7 +97,7 @@ void print_fl(va_list list)
 
 void print_s(va_list list)
 {
-        char *tmp;
+	char *tmp;
 
 	tmp = va_arg(list, char *);
 	if (tmp == NULL)

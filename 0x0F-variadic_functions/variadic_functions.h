@@ -10,7 +10,7 @@ typedef struct type
 {
 	char *tp;
 	void (*f)();
-}type_form;
+} type_form;
 void print_c(va_list list);
 void print_i(va_list list);
 void print_fl(va_list list);

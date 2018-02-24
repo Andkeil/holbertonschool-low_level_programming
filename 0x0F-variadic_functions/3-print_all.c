@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 	strp = "";
 
-	while (format[i] != '\0' && format)
+	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
 		while (arguments[j].tp)

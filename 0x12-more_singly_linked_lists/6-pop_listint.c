@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * pop_listint - pop head off of list
  * @head: list
@@ -19,6 +19,6 @@ int pop_listint(listint_t **head)
 	*head = NULL;
 	*head = tmp->next;
 	num = tmp->n;
-	free(temp);
+	free(tmp);
 	return (num);
 }

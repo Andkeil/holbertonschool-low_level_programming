@@ -18,7 +18,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		copy >>= 1;
 		j++;
 	}
-	if (index >= j)
+	if (index > sizeof(n) * 8)
 		return (-1);
 	copy = n >> index;
 	if (copy & 1)

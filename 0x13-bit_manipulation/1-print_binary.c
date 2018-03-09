@@ -10,7 +10,8 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = 0, copy = n, j = 0;
+	int i = 0, j = 0;
+	unsigned long int copy = n;
 
 	if (n == 0)
 	{

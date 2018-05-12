@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - setting a new node to the hash table
+ * hash_table_set - set a new node to the hash table
  * @ht: hash table
- * @key: new key
+ * @key: key
  * @value: new value
  *
  * Return: 1 success, 0 failure
@@ -45,7 +45,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @ht: address of the hash table
  * @key: key
  * @value: new value
- * @index: the index of the array
+ * @index: index of the array
  *
  * Return: 1 success, 0 fail
  */
@@ -87,12 +87,13 @@ int update_hash_key(hash_table_t **ht, const char *key, const char *value,
 	return (0);
 }
 /**
- * node_exists - check of the node exists in the linked list
- * @node: the node to check
+ * node_exists - check if the node exists in the linked list
+ * @node: node to check
  * @key: key
  * @value: new value
  * Return: 1 success, 0 fail
  */
+
 int node_exists(hash_node_t **node, const char *key, const char *value)
 {
 

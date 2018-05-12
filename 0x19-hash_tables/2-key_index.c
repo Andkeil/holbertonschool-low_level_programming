@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * key_index - generates a unique hash based key and size of array passed in
+ * key_index - generate a unique hash based key and size of array passed in
  * @key: key
  * @size: size of array
  *

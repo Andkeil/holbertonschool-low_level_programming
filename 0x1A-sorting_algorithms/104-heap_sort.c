@@ -61,8 +61,8 @@ void heapify(int *array, size_t size, size_t last, size_t i)
  *
  * @array: array
  * @size: number of elements in array
- * @index0: first index to swap
- * @index1: second index to swap
+ * @findex: first index to swap
+ * @sindex: second index to swap
  */
 void swap(int *array, size_t size, size_t findex, size_t sindex)
 {

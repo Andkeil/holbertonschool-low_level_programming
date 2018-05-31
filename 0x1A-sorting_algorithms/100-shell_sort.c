@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * shell_sort - shell sort algorithm implementation
+ * shell_sort - sort using shell sort algorithm
  * @array: the array
  * @size: the size of the array
  *
@@ -9,35 +9,24 @@
  */
 void shell_sort(int *array, size_t size)
 {
-	int i, j;
-	long temp;
-	int h = 1;
+	long tmp;
+	size_t gap = 1, i, j;
 
-	int nElems = size;
-
-	if (!array || size < 2)
+	if (array == NULL)
 		return;
 
-	while (h <= nElems / 3)
+	while (gap < size)
+		gap = gap * 3 + 1;
+
+	for (gap = (gap - 1) / 3; gap >= 1; gap = (gap - 1) / 3)
 	{
-		h = h * 3 + 1;
-	}
-	while (h > 0)
-	{
-		if (h == 1)
-			print_array(array, size);
-		for (i = h; i < nElems; i++)
+		for (i = gap; i < size; i++)
 		{
-			temp = array[i];
-			j = i;
-			while (j > h - 1 && array[j - h] >= temp)
-			{
-				array[j] = array[j - h];
-				j -= h;
-			}
-			array[j] = temp;
+			tmp = array[i];
+			for (j = i; j >= gap && array[j - gap] > tmp; j -= gap)
+				array[j] = array[j - gap];
+			array[j] = tmp;
 		}
-		h = (h - 1) / 3;
+		print_array(array, size);
 	}
-	print_array(array, size);
 }

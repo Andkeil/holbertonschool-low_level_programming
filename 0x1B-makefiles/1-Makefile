@@ -1,4 +1,4 @@
 CC=gcc
-SRCS_C = main.c holberton.c
+SRCS = main.c holberton.c
 all: main.c holberton.c
 	gcc -o holberton main.c holberton.c

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Island Perimeter Algo
+Island Perimeter Algo Module
 """
 
 
@@ -20,5 +20,9 @@ def island_perimeter(grid):
                 if y == 0 or grid[x][y-1] == 0:
                     perimeter += 1
                 if y == len(grid[x]) - 1 or grid[x][y + 1] == 0:
+                    perimeter += 1
+                if y + 1 == len(grid[x]) or x + 1 == len(grid):
+                    perimeter += 1
+                if x - 1 == -1 or y - 1 == -1:
                     perimeter += 1
     return perimeter

@@ -5,7 +5,7 @@
  * binary_tree_depth - check depth of binary tree
  * @tree: passed in root of tree
  *
- * Return: height of tree
+ * Return: depth of tree
  */
 
 size_t binary_tree_depth(const binary_tree_t *tree)

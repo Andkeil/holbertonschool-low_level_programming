@@ -18,13 +18,13 @@ int binary_search(int *array, size_t size, int value)
 	while (min <= max)
 	{
 		binary_print(array, min, max);
-		mid = (min + max) / 2;
+		mid =  (min + max) / 2;
 
 		if (array[mid] == value)
 		{
 			return (mid);
 		}
-		if (array[mid] < value)
+		else if (array[mid] < value)
 		{
 			min = mid + 1;
 		}
@@ -47,13 +47,14 @@ int binary_search(int *array, size_t size, int value)
 
 void binary_print(int *array, size_t start, size_t end)
 {
-	if (start > end)
-		return;
+	size_t i;
+
 	printf("Searching in array: ");
-	while (start < end)
+	for (i = start; i <= end; i++)
 	{
-		printf("%u, ", array[start]);
-		start++;
+		printf("%d", array[i]);
+		if (i != end)
+			printf(", ");
 	}
-	printf("%u\n", array[start]);
+	printf("\n");
 }

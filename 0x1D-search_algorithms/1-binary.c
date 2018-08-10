@@ -11,27 +11,35 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int min, max, mid;
-
-	min = 0;
-	max = size - 1;
-	while (min <= max)
+	if (array)
 	{
-		binary_print(array, min, max);
-		mid =  (min + max) / 2;
+		return (binary_recursive(array, 0, size - 1, value));
+	}
+	return (-1);
+}
 
-		if (array[mid] == value)
-		{
-			return (mid);
-		}
-		else if (array[mid] < value)
-		{
-			min = mid + 1;
-		}
-		else
-		{
-			max = mid;
-		}
+/**
+ * binary_recursive - binary search recursively
+ * @array: array to search
+ * @min: start index
+ * @max: end index
+ * @value: value to find
+ *
+ * Return: index of value or -1
+ */
+
+int binary_recursive(int *array, size_t min, size_t max, int value)
+{
+	int mid = min + (max - min) / 2;
+
+	binary_print(array, min, max);
+	if (array[mid] == value)
+		return (mid);
+	if (max >= min)
+	{
+		if (array[mid] > value)
+			return (binary_recursive(array, min, mid - 1, value));
+		return (binary_recursive(array, mid + 1, max, value));
 	}
 	return (-1);
 }

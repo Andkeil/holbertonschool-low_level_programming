@@ -56,6 +56,7 @@ int binary_recursive(int *array, size_t min, size_t max, int value)
 void binary_print(int *array, size_t start, size_t end)
 {
 	size_t i;
+
 	if (start > end)
 		return;
 	printf("Searching in array: ");
